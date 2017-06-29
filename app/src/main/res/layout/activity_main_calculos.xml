@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELIJA MONEDA"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_elegir">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/txt_moneda"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite valor"
+        android:background="#14F38F"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:selectAllOnFocus="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELIJA MONEDA A CONVERTIR"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_conversion">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultado"/>
+
+        <Button
+            android:id="@+id/b_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Convert"
+            android:paddingTop="15dp"
+            android:text="Calcular" />
+
+    <Button
+        android:id="@+id/b_salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Salir"
+        android:paddingTop="10dp"
+        android:text="Salir" />
+
+
+
+    </LinearLayout>
+</ScrollView>
